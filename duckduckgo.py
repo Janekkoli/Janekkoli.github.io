@@ -22,7 +22,7 @@ def text_for_fish(name : str):
 
 def byry(name : str):
     with open("ryby/byry/"+filename(name), "w") as s:
-        s.write("## [back](../index.md) \n" +"# "+name+"\n"+text_for_fish(name))
+        s.write("## [back](../index.md) \n" +"# "+name+"\n"+text_for_fish(name) + "\n")
         foto(name)
         s.write("![zdjecie ryby :)](fotki/"+fotoname(name)+")\n")
 
