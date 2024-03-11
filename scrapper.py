@@ -22,7 +22,7 @@ for i in soup.find_all('a'):
 fish_list=fish_list[30:1128]
 
 #special
-fish_list = fish_list[0:10]
+fish_list = fish_list[0:4]
 
 for i in range (len(fish_list)):
     fish_list[i]=("byry/"+filename(fish_list[i]), fish_list[i])
@@ -39,3 +39,5 @@ with open("ryby/index.md", "w") as f:
 
 #print(mis)
 #print(type(list_all_p))
+        
+
