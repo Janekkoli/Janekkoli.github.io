@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 
 import requests
- 
+from duckduckgo import *
 page_url = 'https://en.wikipedia.org/wiki/List_of_fish_common_names'
 page = requests.get(page_url)
 soup = BeautifulSoup(page.content, 'html.parser')
@@ -20,13 +20,18 @@ for i in soup.find_all('a'):
 #print(fish_list.index('Zebra tilapia'))
 #print(fish_list[30:1128])
 fish_list=fish_list[30:1128]
+
+#special
+fish_list = fish_list[0:10]
+
 for i in range (len(fish_list)):
-    fish_list[i]=("xdddd", fish_list[i])
-# for i in fish_list:
-#     print(i)
+    fish_list[i]=("byry/"+fish_list[i].replace(" ", "_") + ".md", fish_list[i])
+    byry(fish_list[i][1])
+
+
 
 with open("ryby/index.md", "w") as f:
-    with open("ryby/title.md", "r") as r:
+    with open("title.md", "r") as r:
         f.write(r.read() + "\n") 
     for i in fish_list:
         f.write('- [' + i[1] + '](' + i[0] + ')' + "\n")
