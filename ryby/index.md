@@ -8,6 +8,6 @@
 - [Airsac catfish](byry/Airsac_catfish.md)
 - [Alaska blackfish](byry/Alaska_blackfish.md)
 - [Albacore](byry/Albacore.md)
-- [Alewife (fish)](byry/Alewife_(fish).md)
+- [Alewife (fish)](byry/Alewife_fish.md)
 - [Alfonsino](byry/Alfonsino.md)
 - [Algae eater](byry/Algae_eater.md)

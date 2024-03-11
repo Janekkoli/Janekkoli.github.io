@@ -6,11 +6,16 @@ from bs4 import BeautifulSoup
 
 search = DuckDuckGoSearchRun() 
 
+def filename(name : str):
+    whitelist = set('abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ_')
+
+    return ''.join(filter(whitelist.__contains__, name.replace(" ","_")))+ ".md"
+
 
 def text_for_fish(name : str): 
     return search.run(name)
 
 
 def byry(name : str):
-    with open("ryby/byry/"+name.replace(" ", "_")+".md", "w") as s:
+    with open("ryby/byry/"+filename(name), "w") as s:
         s.write("# "+name+"\n"+text_for_fish(name))

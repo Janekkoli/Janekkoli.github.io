@@ -1,5 +1,5 @@
 from bs4 import BeautifulSoup
-
+import os
 import requests
 from duckduckgo import *
 page_url = 'https://en.wikipedia.org/wiki/List_of_fish_common_names'
@@ -25,7 +25,7 @@ fish_list=fish_list[30:1128]
 fish_list = fish_list[0:10]
 
 for i in range (len(fish_list)):
-    fish_list[i]=("byry/"+fish_list[i].replace(" ", "_") + ".md", fish_list[i])
+    fish_list[i]=("byry/"+filename(fish_list[i]), fish_list[i])
     byry(fish_list[i][1])
 
 
