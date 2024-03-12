@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 import os
 import requests
 from duckduckgo import *
-
+from concurrent.futures import ProcessPoolExecutor
 
 
 page_url = 'https://en.wikipedia.org/wiki/List_of_fish_common_names'
@@ -24,14 +24,15 @@ for i in soup.find_all('a'):
 # print(fish_list[30:1128])
 fish_list = fish_list[30:1128]
 # special
-fish_list = fish_list[0:4]
+fish_list = fish_list[0:45]
 
 for i in range(len(fish_list)):
     fish_list[i] = ("byry/" + filename(fish_list[i][0]), fish_list[i][0], fish_list[i][1])
-
+x=0
 for i in fish_list:
     byry(i[1])
-
+    print(x)
+    x+=1
 with open("ryby/index.md", "w") as f:
     with open("title.md", "r") as r:
         f.write(r.read() + "\n")
