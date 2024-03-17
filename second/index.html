@@ -48,7 +48,34 @@
             <li>Second item</li>
             <li>Third item</li>
         </ol>
-        <img src="../ryby/fotki/" alt="Just a fish">
+        <img src="../ryby/fotki/African_glass_catfish.jpg" alt="Just a fish" >
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="UK">UK</option>
+                <option value="Australia">Australia</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+        <p>Progress: <progress value="50" max="100"></progress></p>
+
+
+        <h2>My Map</h2>
+        <img src="../ryby/fotki/Anchovy.jpg" alt="Anchovy" usemap="#map" width="70%">
+
+        <map name="map">
+            <area shape="rect" coords="0,0,100,100" href="https://en.wikipedia.org/wiki/Mouth" alt="Mouth">
+            <area shape="circle" coords="150,150,50" href="https://en.wikipedia.org/wiki/Tail" alt="Tail">
+        </map>
     </article>
 
     <footer>
