@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>  Fish Form</h1>
+      <div class="container">
+        <form>
+            <div class="mb-3">
+                <label for="text-input" class="form-label">Name:</label>
+                <input type="text" class="form-control" id="text-input" placeholder="Enter text">
+            </div>
+            <div class="mb-3">
+                <label for="checkbox-input" class="form-label">Do you like fishes?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="checkbox-input">
+                    <label class="form-check-label" for="checkbox-input">Yes</label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="radio-input" class="form-label">Are you sure?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radio-input" id="radio-input1">
+                    <label class="form-check-label" for="radio-input1">Yes</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radio-input" id="radio-input2">
+                    <label class="form-check-label" for="radio-input2">Non't</label>
+                </div>
+            </div>
+
+
+            <div class="mb-3">
+                <label for="fish-input" class="form-label">Favorite Fish:</label>
+                <select class="form-select" id="fish-input">
+                    <option selected>Select your favorite fish</option>
+                    <option value="salmon">Salmon</option>
+                    <option value="tuna">Tuna</option>
+                    <option value="cod">Cod</option>
+                    <option value="trout">Trout</option>
+                    <option value="bass">Bass</option>
+                    <option value="snapper">Snapper</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="textarea-input" class="form-label">Additional Comments:</label>
+                <textarea class="form-control" id="textarea-input" rows="3" placeholder="Enter your comments"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    
+
+</body>
+</html>
+
+
+
