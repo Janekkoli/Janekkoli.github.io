@@ -4,8 +4,8 @@
     <link rel="stylesheet" href="../output.css">
     <title>Ryby 2</title>
 </head>
-<body>
-    <header class="bg-teal-600">
+<body class="grid grid-cols-6 grid-flow-row gap-4 min-h-screen auto-rows-min">
+    <header class="bg-teal-600 col-span-6 row-auto text-white py-4 px-6  h-25">
         <h1 class="text-sky-500 text-xl font-bold">Page about Anchovy</h1>
         <nav>
             <ul>
@@ -16,7 +16,30 @@
         </nav>
     </header>
 
-    <article class = "bg-teal-700">
+    <aside class="col-span-1 bg-gray-200 py-4 px-2"> 
+    <figure>
+        <img src="../ryby/fotki/Alaska_blackfish.jpg" alt="Fish 1" class="animate-bounce">
+        
+    </figure>
+    <figure>
+        <img src="../ryby/fotki/Archerfish.jpg" alt="Fish 2" class="animate-bounce">
+        
+    </figure>
+    <figure>
+        <img src="../ryby/fotki/Alewife_fish.jpg" alt="Fish 3" class="animate-bounce">
+        
+    </figure>
+    <figure>
+        <img src="../ryby/fotki/Arowana.jpg" alt="Fish 3" class="animate-bounce">
+        
+    </figure>
+    <figure>
+        <img src="../ryby/fotki/Cave_angelfish.jpg" alt="Fish 3" class="animate-bounce">
+        
+    </figure>
+</aside>
+
+    <article class = "bg-teal-700 col-span-5 bg-gray-100 py-4 px-6">
         <h2>Anchovy</h2>
         <strong>Published on March 17, 2024</strong>
         <p>Anchovies are the comedians of the sea, always cracking jokes and making waves!
@@ -95,7 +118,7 @@
         </map>
     </article>
 
-    <footer class="bg-teal-800">
+    <footer class="bg-teal-800 col-span-6 bg-gray-800 text-white py-4 px-6">
         <!-- Your footer content goes here -->
         <em>Contact me at: efiflak@gmail.com</em>
         <p>&copy; 2024 My Webpage. All rights reserved.</p>
